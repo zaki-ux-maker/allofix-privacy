@@ -7,38 +7,43 @@
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       line-height: 1.8;
       color: #333;
-      background-color: #f3f4f6;
-      margin: 0;
-      padding: 0;
+      background-color: #f8fafc;
     }
-    /* تصميم الغلاف العلوي العريض مثل فيسبوك */
-    .banner-wrapper {
+
+    /* الغلاف العلوي العريض الممتد لكامل الشاشة */
+    .banner-header {
       width: 100%;
-      height: 200px;
       background-color: #ffffff;
-      border-bottom: 2px solid #e5e7eb;
+      border-bottom: 1px solid #e2e8f0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       overflow: hidden;
-      position: relative;
     }
-    .banner-wrapper img {
+    .banner-header img {
       width: 100%;
-      height: 100%;
+      max-height: 380px;
       object-fit: cover;
       object-position: center;
       display: block;
     }
+
+    /* بطاقة المحتوى */
     .container {
-      max-width: 800px;
-      margin: 20px auto 40px auto;
+      max-width: 820px;
+      margin: 30px auto 50px auto;
       background: #ffffff;
-      padding: 30px 24px;
+      padding: 35px 25px;
       border-radius: 16px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     }
     h1 { 
       color: #166534; 
@@ -57,12 +62,14 @@
     }
     ul { 
       padding-right: 20px; 
+      margin-top: 10px;
+      margin-bottom: 15px;
     }
     .badge {
       display: inline-block;
       background: #e0f2fe;
       color: #0369a1;
-      padding: 4px 12px;
+      padding: 5px 14px;
       border-radius: 6px;
       font-size: 0.85rem;
       margin-bottom: 12px;
@@ -71,30 +78,31 @@
     .footer {
       margin-top: 40px;
       border-top: 1px solid #e5e7eb;
-      padding-top: 15px;
+      padding-top: 20px;
       text-align: center;
       color: #9ca3af;
       font-size: 0.9rem;
     }
+
     @media (max-width: 600px) {
-      .banner-wrapper {
-        height: 150px;
+      .banner-header img {
+        max-height: 200px;
       }
       .container {
-        margin: 10px;
-        padding: 20px 16px;
+        margin: 15px 12px;
+        padding: 22px 16px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- الغلاف العلوي العريض -->
-  <div class="banner-wrapper">
-    <img src="logo.png" alt="AlloFix Cover">
-  </div>
+  <!-- الغلاف العريض الممتد -->
+  <header class="banner-header">
+    <img src="logo.png" alt="AlloFix Services & Market Banner">
+  </header>
 
-  <div class="container">
+  <main class="container">
     <div class="badge">تطبيق ومنصة AlloFix المعتمدة</div>
     <h1>سياسة الخصوصية</h1>
     <p><strong>تاريخ آخر تحديث:</strong> 18 سبتمبر 2026</p>
@@ -145,10 +153,10 @@
       <li><strong>البريد الإلكتروني:</strong> allofix.contact@gmail.com</li>
     </ul>
 
-    <div class="footer">
+    <footer class="footer">
       <p>© AlloFix 2026 — جميع الحقوق محفوظة</p>
-    </div>
-  </div>
+    </footer>
+  </main>
 
 </body>
 </html>
