@@ -1,162 +1,68 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سياسة الخصوصية | AlloFix</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      line-height: 1.8;
-      color: #333;
-      background-color: #f8fafc;
-    }
-
-    /* الغلاف العلوي العريض الممتد لكامل الشاشة */
-    .banner-header {
-      width: 100%;
-      background-color: #ffffff;
-      border-bottom: 1px solid #e2e8f0;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
-    .banner-header img {
-      width: 100%;
-      max-height: 380px;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
-
-    /* بطاقة المحتوى */
-    .container {
-      max-width: 820px;
-      margin: 30px auto 50px auto;
-      background: #ffffff;
-      padding: 35px 25px;
-      border-radius: 16px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-    }
-    h1 { 
-      color: #166534; 
-      border-bottom: 2px solid #e5e7eb; 
-      padding-bottom: 12px; 
-      margin-top: 10px;
-    }
-    h2 { 
-      color: #1f2937; 
-      margin-top: 28px; 
-      font-size: 1.25rem; 
-    }
-    p, li { 
-      font-size: 1rem; 
-      color: #4b5563; 
-    }
-    ul { 
-      padding-right: 20px; 
-      margin-top: 10px;
-      margin-bottom: 15px;
-    }
-    .badge {
-      display: inline-block;
-      background: #e0f2fe;
-      color: #0369a1;
-      padding: 5px 14px;
-      border-radius: 6px;
-      font-size: 0.85rem;
-      margin-bottom: 12px;
-      font-weight: bold;
-    }
-    .footer {
-      margin-top: 40px;
-      border-top: 1px solid #e5e7eb;
-      padding-top: 20px;
-      text-align: center;
-      color: #9ca3af;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      .banner-header img {
-        max-height: 200px;
-      }
-      .container {
-        margin: 15px 12px;
-        padding: 22px 16px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- الغلاف العريض الممتد -->
-  <header class="banner-header">
-    <img src="logo.png" alt="AlloFix Services & Market Banner">
-  </header>
-
-  <main class="container">
-    <div class="badge">تطبيق ومنصة AlloFix المعتمدة</div>
-    <h1>سياسة الخصوصية</h1>
-    <p><strong>تاريخ آخر تحديث:</strong> 18 سبتمبر 2026</p>
-
-    <p>تطبيق <strong>AlloFix</strong> هو منصة رقمية موحدة تجمع بين خدمات الصيانة المهنية وسوق المعدات المفتوح (AlloFix Market). نلتزم التزاماً كاملاً بحماية خصوصية مستخدمينا (زبائن، حرفيين، وتجار) وفقاً للمعايير التقنية المعمول بها وأحكام القانون الجزائري رقم 18-07 المتعلق بحماية الأشخاص الطبيعيين في مجال معالجة المعطيات ذات الطابع الشخصي.</p>
-
-    <h2>1. البيانات التي نجمعها</h2>
-    <ul>
-      <li><strong>بيانات الحساب والهوية:</strong> الاسم الكامل، رقم الهاتف (للتواصل المباشر بعد قبول الخدمة)، والبريد الإلكتروني (لتأمين تسجيل الدخول). بالنسبة للحرفيين، تُجمع صورة بطاقة الهوية أو بطاقة الحرفي للتحقق الداخلي ومكافحة الاحتيال فقط ولا تظهر للمستخدمين.</li>
-      <li><strong>الموقع الجغرافي (GPS):</strong> يُستخدم الموقع الدقيق أثناء فتح التطبيق لحساب المسافة بين الزبون وأقرب فني، وترتيب عروض سوق الأدوات القريبة جغرافياً.</li>
-      <li><strong>بيانات سوق AlloFix Market والمحفظة:</strong> سجل العروض المنشورة، المزايدات، التفاوض، وسجل رصيد المحفظة الداخلية (المنصة لا تخزن بيانات البطاقات البنكية الحساسة).</li>
-      <li><strong>الصور والوسائط:</strong> صور أعطال الصيانة، صور معرض الأعمال (Portfolio)، وصور المعدات المعروضة في السوق.</li>
-      <li><strong>بيانات الاستخدام والرسائل:</strong> نصوص المراسلات الداخلية لتوثيق الاتفاقات وحل النزاعات، ورموز Firebase للإشعارات اللحظية.</li>
-    </ul>
-
-    <h2>2. كيف نستعمل هذه البيانات؟</h2>
-    <ul>
-      <li>ربط الزبائن بالحرفيين المناسبين وتنسيق المهام الميدانية.</li>
-      <li>تشغيل وإدارة سوق المعدات وتوثيق المزادات وعمليات البيع والشراء.</li>
-      <li>التحقق من هوية وموثوقية مقدمي الخدمات لحماية المستخدمين.</li>
-      <li>إرسال التنبيهات الخاصة بحالة الطلبات، المزايدات، والرسائل.</li>
-      <li>تقديم الدعم الفني وفض النزاعات ومنع الأنشطة المخالفة.</li>
-    </ul>
-
-    <h2>3. مشاركة البيانات والجهات الخارجية</h2>
-    <p>نحن لا نبيع بياناتك الشخصية لأي طرف ثالث. تتم مشاركة البيانات في الحدود التشغيلية فقط:</p>
-    <ul>
-      <li><strong>بين المستخدمين:</strong> تظهر البيانات العامة (الاسم، التقييم، التخصص، المعروضات). يظهر رقم الهاتف فقط للطرف الآخر بعد قبول طلب الخدمة أو اتفاق الشراء.</li>
-      <li><strong>البنية التحتية السحابية:</strong> نستخدم خدمات Supabase (قواعد البيانات المشفرة)، Google Cloud & Firebase (تشغيل الخوادم، المصادقة، والإشعارات)، وGoogle Maps لمعالجة الخرائط.</li>
-      <li><strong>الامتثال القانوني:</strong> يتم الإفصاح عن البيانات فقط بطلب رسمي وملزم من السلطات القضائية المختصة في الجزائر.</li>
-    </ul>
-
-    <h2>4. أمان البيانات</h2>
-    <p>تُشفر كافة البيانات أثناء النقل عبر بروتوكولات التشفير القياسية (HTTPS / TLS). وتُخزن الوثائق الثبوتية والبيانات الحساسة في طبقات مشفرة بقواعد وصول مشددة (Row Level Security).</p>
-
-    <h2>5. الاحتفاظ بالبيانات وحذف الحساب (Account Deletion)</h2>
-    <p>يحق للمستخدم في أي وقت طلب حذف حسابه وبياناته نهائياً من داخل التطبيق مباشرة عبر التوجه إلى:</p>
-    <p><code>الحساب ⬅️ تفضيلات التطبيق والخصوصية والأمان ⬅️ حذف الحساب نهائياً</code></p>
-    <p>يتم مسح كافة البيانات الشخصية والوثائق بشكل نهائي من الخوادم خلال مدة أقصاها 30 يوماً من تاريخ تقديم الطلب، باستثناء السجلات المالية أو الرقابية التي يفرض القانون الاحتفاظ بها لتسوية النزاعات السابقة.</p>
-
-    <h2>6. خصوصية القُصّر (+18)</h2>
-    <p>تطبيق AlloFix مخصص للبالغين فقط (18 عاماً فما فوق)، نظراً لطبيعة التعاقدات المالية والزيارات الميدانية. لا نجمع عمداً أي بيانات من الأطفال والقُصّر، ويتم حذف أي حساب يُكتشف تسجيله لشخص دون هذا السن فوراً.</p>
-
-    <h2>7. معلومات الاتصال والدعم</h2>
-    <p>لأي استفسار أو لممارسة حقوقك المتعلقة ببياناتك الشخصية، يمكنك مراسلتنا على:</p>
-    <ul>
-      <li><strong>المسؤول:</strong> إدارة تطبيق AlloFix — الجزائر</li>
-      <li><strong>البريد الإلكتروني:</strong> allofix.contact@gmail.com</li>
-    </ul>
-
-    <footer class="footer">
-      <p>© AlloFix 2026 — جميع الحقوق محفوظة</p>
-    </footer>
-  </main>
-
-</body>
-</html>
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>سياسة الخصوصية – AlloFix</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--navy:#0b1f5c;--org:#f36f21;--bg:#f4f6fb;--card:#fff;--fg:#1c2433;--mut:#5d6778;--line:#e3e8f1;--soft:#fff3ea;--ok:#127a4a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0f1d;--card:#121a2e;--fg:#e8edf8;--mut:#9aa6bf;--line:#243050;--soft:#2a1a10;--navy:#8fb0ff}}
+:root[data-theme="dark"]{--bg:#0a0f1d;--card:#121a2e;--fg:#e8edf8;--mut:#9aa6bf;--line:#243050;--soft:#2a1a10;--navy:#8fb0ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.9;font-size:16px}
+#bar{position:fixed;top:0;right:0;height:4px;width:0;background:linear-gradient(90deg,var(--org),#ffb37a);z-index:20}
+.banner{background:#fdfdfe;text-align:center;border-bottom:1px solid #dde3ee}.banner img{display:block;margin:0 auto;width:100%;max-width:860px;height:auto}
+header{background:linear-gradient(135deg,#0b1f5c,#16358f 60%,#f36f21 140%);color:#fff;text-align:center;padding:26px 18px 64px}
+.logo{width:150px;height:150px;border-radius:28px;object-fit:cover;background:#fff;box-shadow:0 12px 30px #0006;border:4px solid #fff}
+header h1{margin:0 0 4px;font-size:30px}header p{margin:0;opacity:.85;font-size:15px}
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.chip{background:#ffffff22;border:1px solid #ffffff44;border-radius:99px;padding:3px 14px;font-size:13px}
+main{max-width:1000px;margin:-40px auto 40px;padding:0 14px;display:grid;grid-template-columns:230px 1fr;gap:20px;align-items:start}
+nav{position:sticky;top:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;font-size:14px}
+nav b{display:block;margin-bottom:6px;color:var(--navy)}
+nav a{display:block;padding:5px 10px;border-radius:10px;color:var(--mut);text-decoration:none;border-inline-start:3px solid transparent}
+nav a.on{background:var(--soft);color:var(--org);border-color:var(--org);font-weight:700}
+nav button{margin-top:10px;width:100%;border:0;background:var(--org);color:#fff;border-radius:10px;padding:8px;font:inherit;cursor:pointer}
+article{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px 24px;box-shadow:0 10px 30px #0b1f5c14}
+.intro{background:var(--soft);border-inline-start:4px solid var(--org);border-radius:12px;padding:12px 16px;margin:0 0 8px}
+section{padding:18px 0;border-top:1px solid var(--line)}section:first-of-type{border:0}
+h2{margin:0 0 8px;font-size:20px;color:var(--navy);display:flex;gap:10px;align-items:center}
+h2 i{font-style:normal;min-width:34px;height:34px;border-radius:10px;background:var(--org);color:#fff;display:grid;place-items:center;font-size:16px}
+ul{margin:6px 0;padding-inline-start:22px}li{margin:6px 0}li::marker{color:var(--org)}
+li b{color:var(--navy)}p{margin:6px 0}
+.path{display:inline-block;background:var(--bg);border:1px dashed var(--org);border-radius:10px;padding:4px 12px;font-weight:700;color:var(--org)}
+.contact{display:grid;gap:10px;margin-top:8px}
+.contact div{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
+.contact a{color:var(--org);font-weight:700;direction:ltr;unicode-bidi:embed}
+footer{text-align:center;color:var(--mut);font-size:13px;padding:0 14px 30px}
+@media(max-width:760px){main{grid-template-columns:1fr}nav{position:static}nav a{display:inline-block}header h1{font-size:24px}article{padding:20px 16px}}
+@media print{nav,#bar{display:none}main{display:block;margin:0}header{background:#fff;color:#000}article{box-shadow:none;border:0}}
+</style></head><body><div id="bar"></div>
+<div class="banner"><img src="allofix-banner.jpg" alt="AlloFix Services &amp; Market"></div><header><h1>سياسة الخصوصية</h1><p>تطبيق ومنصة AlloFix المعتمدة — حرفيو الجزائر بضغطة زر</p>
+<div class="chips"><span class="chip">📅 آخر تحديث: 18 سبتمبر 2026</span><span class="chip">🇩🇿 القانون الجزائري رقم 18-07</span><span class="chip">🔒 تشفير HTTPS / TLS</span></div></header>
+<main><nav><b>المحتويات</b>
+<a href="#s1">1. البيانات التي نجمعها</a><a href="#s2">2. كيف نستعمل البيانات</a><a href="#s3">3. المشاركة والجهات الخارجية</a><a href="#s4">4. أمان البيانات</a><a href="#s5">5. الاحتفاظ وحذف الحساب</a><a href="#s6">6. خصوصية القُصَّر</a><a href="#s7">7. الاتصال والدعم</a>
+<button onclick="window.print()">🖨️ طباعة / حفظ PDF</button></nav>
+<article>
+<p class="intro"><b>AlloFix</b> هو منصة رقمية موحدة تجمع بين خدمات الصيانة المهنية وسوق المعدات المفتوح (AlloFix Market). نلتزم التزاماً كاملاً بحماية خصوصية مستخدمينا (زبائن، حرفيين، وتجار) وفقاً للمعايير التقنية المعمول بها وأحكام القانون الجزائري رقم 07-18 المتعلق بحماية الأشخاص الطبيعيين في مجال معالجة المعطيات ذات الطابع الشخصي.</p>
+<section id="s1"><h2><i>1</i>البيانات التي نجمعها</h2><ul>
+<li><b>بيانات الحساب والهوية:</b> الاسم الكامل، رقم الهاتف (للتواصل المباشر بعد قبول الخدمة)، والبريد الإلكتروني (لتأمين تسجيل الدخول). بالنسبة للحرفيين، تجمع صورة بطاقة الهوية أو بطاقة الحرفي للتحقق الداخلي ومكافحة الاحتيال فقط ولا تظهر للمستخدمين.</li>
+<li><b>الموقع الجغرافي (GPS):</b> يستخدم الموقع الدقيق أثناء فتح التطبيق لحساب المسافة بين الزبون وأقرب فني، وترتيب عروض سوق الأدوات القريبة جغرافياً.</li>
+<li><b>بيانات سوق AlloFix Market والمحفظة:</b> سجل العروض المنشورة، المزايدات، التفاوض، وسجل رصيد المحفظة الداخلية (المنصة لا تخزن بيانات البطاقات البنكية الحساسة).</li>
+<li><b>الصور والوسائط:</b> صور أعطال الصيانة، صور معرض الأعمال (Portfolio)، وصور المعدات المعروضة في السوق.</li>
+<li><b>بيانات الاستخدام والرسائل:</b> نصوص المراسلات الداخلية لتوثيق الاتفاقات وحل النزاعات، ورموز Firebase للإشعارات اللحظية.</li></ul></section>
+<section id="s2"><h2><i>2</i>كيف نستعمل هذه البيانات؟</h2><ul>
+<li>ربط الزبائن بالحرفيين المناسبين وتنسيق المهام الميدانية.</li><li>تشغيل وإدارة سوق المعدات وتوثيق المزادات وعمليات البيع والشراء.</li><li>التحقق من هوية وموثوقية مقدمي الخدمات لحماية المستخدمين.</li><li>إرسال التنبيهات الخاصة بحالة الطلبات، المزايدات، والرسائل.</li><li>تقديم الدعم الفني وفض النزاعات ومنع الأنشطة المخالفة.</li></ul></section>
+<section id="s3"><h2><i>3</i>مشاركة البيانات والجهات الخارجية</h2><p>نحن لا نبيع بياناتك الشخصية لأي طرف ثالث. تتم مشاركة البيانات في الحدود التشغيلية فقط:</p><ul>
+<li><b>بين المستخدمين:</b> تظهر البيانات العامة (الاسم، التقييم، التخصص، المعروضات). يظهر رقم الهاتف فقط للطرف الآخر بعد قبول طلب الخدمة أو اتفاق الشراء.</li>
+<li><b>البنية التحتية السحابية:</b> نستخدم خدمات Supabase (قواعد البيانات المشفرة)، Google Cloud &amp; Firebase (تشغيل الخوادم، المصادقة، والإشعارات)، وGoogle Maps لمعالجة الخرائط.</li>
+<li><b>الامتثال القانوني:</b> يتم الإفصاح عن البيانات فقط بطلب رسمي وملزم من السلطات القضائية المختصة في الجزائر.</li></ul></section>
+<section id="s4"><h2><i>4</i>أمان البيانات</h2><p>نشفر كافة البيانات أثناء النقل عبر بروتوكولات التشفير القياسية (HTTPS / TLS)، ونخزن الوثائق الثبوتية والبيانات الحساسة في طبقات مشفرة بقواعد وصول مشددة (Row Level Security).</p></section>
+<section id="s5"><h2><i>5</i>الاحتفاظ بالبيانات وحذف الحساب (Account Deletion)</h2><p>يحق للمستخدم في أي وقت طلب حذف حسابه وبياناته نهائياً من داخل التطبيق مباشرة عبر التوجه إلى:</p><p><span class="path">الحساب ⬅️ تفضيلات التطبيق ⬅️ الخصوصية والأمان ⬅️ حذف الحساب نهائياً</span></p><p>يتم مسح كافة البيانات الشخصية والوثائق بشكل نهائي من الخوادم خلال مدة أقصاها 30 يوماً من تاريخ تقديم الطلب، باستثناء السجلات المالية أو الرقابية التي يفرض القانون الاحتفاظ بها لتسوية النزاعات السابقة.</p></section>
+<section id="s6"><h2><i>6</i>خصوصية القُصَّر (+18)</h2><p>تطبيق AlloFix مخصص للبالغين فقط (18 عاماً فما فوق)، نظراً لطبيعة التعاملات المالية والزيارات الميدانية. لا نجمع عمداً أي بيانات من الأطفال والقُصَّر، ويتم حذف أي حساب يكتشف تسجيله لشخص دون هذا السن فوراً.</p></section>
+<section id="s7"><h2><i>7</i>معلومات الاتصال والدعم</h2><p>لأي استفسار أو لممارسة حقوقك المتعلقة ببياناتك الشخصية، يمكنك مراسلتنا على:</p>
+<div class="contact"><div>🏢 <b>المسؤول:</b> إدارة تطبيق AlloFix — الجزائر</div><div>✉️ <b>البريد الإلكتروني:</b> <a href="mailto:allofix.contact@gmail.com">allofix.contact@gmail.com</a></div></div></section>
+</article></main>
+<footer>© AlloFix 2026 — جميع الحقوق محفوظة</footer>
+<script>
+var bar=document.getElementById('bar'),links=[].slice.call(document.querySelectorAll('nav a')),secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+function upd(){var h=document.documentElement,p=(h.scrollTop||document.body.scrollTop)/(h.scrollHeight-h.clientHeight);bar.style.width=Math.min(100,p*100)+'%';
+var cur=0;secs.forEach(function(s,i){if(s.getBoundingClientRect().top<140)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}
+addEventListener('scroll',upd,{passive:true});upd();
+</script></body></html>
